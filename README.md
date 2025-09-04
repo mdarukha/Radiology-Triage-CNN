@@ -87,14 +87,11 @@ Each model was implemented in its own Jupyter Notebook using PyTorch:
 ---
 
 ## 🧾 Files in This Repo
-notebooks/
-├── Efficient_Net_CNN_Model_X_Ray_Image_Classification_Group_4.ipynb
-├── ResNet_Model_X_Ray_Image_Classification_Group_4.ipynb
-report/
-└── Radiology_X_Ray_Report_Classification_Group_4.pdf
-
-<pre> notebooks/ ├── Efficient_Net_CNN_Model_X_Ray_Image_Classification_Group_4.ipynb ├── ResNet_Model_X_Ray_Image_Classification_Group_4.ipynb report/ └── Radiology_X_Ray_Report_Classification_Group_4.pdf </pre>
-
+- notebooks
+  - EfficientNet_B0_X_Ray_Image_Classification.ipynb
+  - ResNet18_X_Ray_Image_Classification.ipynb
+- report
+  - Radiology_X_Ray_Classification_Report.pdf
 
 ---
 
