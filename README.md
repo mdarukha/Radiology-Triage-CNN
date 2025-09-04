@@ -70,7 +70,7 @@ Each model was implemented in its own Jupyter Notebook using PyTorch:
 🔍 **Grad-CAM** heatmaps showed attention focused on plausible disease regions in the lungs, supporting interpretability.
 
 
-![EfficientNet Grad-CAM](assets/gradcam_efficientnet.png)
+![EfficientNet Grad-CAM](assets/sample_gradcam_resnet.png)
 
 > Model focuses attention on clinically relevant regions for **Infiltration**.
 
