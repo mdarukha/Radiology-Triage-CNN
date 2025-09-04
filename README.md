@@ -19,7 +19,7 @@ This project explores whether modern architectures like EfficientNet can offer i
 - **Original Size**: 112,000+ frontal-view chest X-rays  
 - **Selected Classes**: Top 3 most common labels  
   - `Atelectasis`, `Effusion`, `Infiltration`
-- **Final Dataset Size After Filtering**: ~22,000 labeled images
+- **Final Dataset Size After Filtering**: 25,000+ labeled images
 
 ---
 
@@ -63,11 +63,16 @@ Each model was implemented in its own Jupyter Notebook using PyTorch:
 
 | Metric            | ResNet-18     | EfficientNet-B0 |
 |------------------|---------------|-----------------|
-| **Test Accuracy** | ~69.9%        | ~70.2%          |
-| **F1 (Macro Avg)**| ~0.66         | ~0.67           |
-| **Best Recall**   | Infiltration (0.80) | Infiltration (0.82) |
+| **Test Accuracy** | ~69.9%        | ~76.2%          |
+| **F1 (Macro Avg)**| ~0.66         | ~0.74           |
+| **Best Recall**   | Infiltration (0.80) | Infiltration (0.86) |
 
 🔍 **Grad-CAM** heatmaps showed attention focused on plausible disease regions in the lungs, supporting interpretability.
+
+
+![EfficientNet Grad-CAM](assets/gradcam_efficientnet.png)
+
+> Model focuses attention on clinically relevant regions for **Infiltration**.
 
 ---
 
@@ -76,6 +81,7 @@ Each model was implemented in its own Jupyter Notebook using PyTorch:
 - EfficientNet-B0 slightly outperforms ResNet-18 while using fewer parameters and lower computational cost.
 - Infiltration was consistently the most accurately predicted class, likely due to stronger visual patterns.
 - Grad-CAM maps helped validate that both models were focusing on clinically relevant features.
+- Project demonstrates practical application of modern CNNs in medical imaging triage.
 
 ---
 
