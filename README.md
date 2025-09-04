@@ -14,7 +14,8 @@ This project explores whether modern architectures like EfficientNet can offer i
 
 ## 🗃 Dataset
 
-- **Source**: NIH ChestX-ray14 Public Dataset  
+- **Source**: NIH ChestX-ray14 Public Dataset
+  - images from https://www.kaggle.com/datasets/nih-chest-xrays/data (image files numbered 001 - 012)
 - **Original Size**: 112,000+ frontal-view chest X-rays  
 - **Selected Classes**: Top 3 most common labels  
   - `Atelectasis`, `Effusion`, `Infiltration`
@@ -78,13 +79,6 @@ Each model was implemented in its own Jupyter Notebook using PyTorch:
 
 ---
 
-## ⚠️ Limitations & Future Work
-
-> As noted by reviewers:
-- The task is well-explored in literature and lacks novelty
-- Dataset is single-site, which may limit generalizability
-- No uncertainty quantification or ensemble methods used
-
 🔮 **Future improvements could include**:
 - Training on more rare or complex labels
 - Incorporating Bayesian dropout or ensembling for confidence scores
@@ -107,9 +101,15 @@ report/
    ```bash
    git clone https://github.com/yourusername/radiology-triage-cnn.git
    cd radiology-triage-cnn
-Set up environment (example):
-pip install -r requirements.txt
-Run either notebook in Jupyter or Colab:
-EfficientNet...ipynb
-ResNet...ipynb
+   
+2. Run either notebook in Jupyter or Colab:
+- EfficientNet...ipynb
+- ResNet...ipynb
+  
 ⚠️ Image files are not included in this repo due to size — you will need to mount your own copy of the NIH ChestX-ray14 dataset and adjust the image_dir paths.
+
+--- 
+
+## 📬 Contact
+
+For questions or collaboration ideas, please reach out or open an issue on GitHub.
